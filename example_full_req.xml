@@ -1,0 +1,15 @@
+POST /ExampleService HTTP/1.1
+Host: example.com
+Content-Type: text/xml; charset=utf-8
+Content-Length: 1234
+SOAPAction: "http://example.com/GetExample"
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:example="http://example.com">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <example:Request>
+      <example:Parameter1>Value1</example:Parameter1>
+      <example:Parameter2>Value2</example:Parameter2>
+    </example:Request>
+  </soapenv:Body>
+</soapenv:Envelope>
