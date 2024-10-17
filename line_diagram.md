@@ -10,7 +10,6 @@ graph TD
     H --> I[GetResponse Message]
     I --> A
 ```
-
 ### Diagram Explanation
 - **A: Client Request**: Initiates communication with the service.
 - **B: GetRequest Message**: The request message is constructed using the `GetRequest` definition.
