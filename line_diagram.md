@@ -1,14 +1,27 @@
 ```mermaid
 graph TD
-    A[Client Request (A)] --> B[GetRequest Message (B)]
-    B --> C[PortType Operation Mapping (C)]
-    C --> D[Operation: GetExample (D)]
-    D --> E[Input Validation (E)]
-    E --> F[Binding Protocol Specification (F)]
-    F --> G[SOAP over HTTP (G)]
-    G --> H[Server Response (H)]
-    H --> I[GetResponse Message (I)]
+    A[Client Request] --> B[GetRequest Message]
+    B --> C[PortType Operation Mapping]
+    C --> D[Operation: GetExample]
+    D --> E[Input Validation]
+    E --> F[Binding Protocol Specification]
+    F --> G[SOAP over HTTP]
+    G --> H[Server Response]
+    H --> I[GetResponse Message]
     I --> A
+
+    %% Labels
+    A:::label
+    B:::label
+    C:::label
+    D:::label
+    E:::label
+    F:::label
+    G:::label
+    H:::label
+    I:::label
+
+    classDef label fill:#f9f,stroke:#333,stroke-width:2px;
 ```
 ### Diagram Explanation
 - **A: Client Request**: Initiates communication with the service.
